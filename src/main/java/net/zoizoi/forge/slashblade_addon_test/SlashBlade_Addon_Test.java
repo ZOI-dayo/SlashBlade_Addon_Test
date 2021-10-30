@@ -33,7 +33,7 @@ public class SlashBlade_Addon_Test {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-
+        new BladeLoader(event);
     }
 
     /**

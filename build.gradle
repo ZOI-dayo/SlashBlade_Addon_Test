@@ -11,6 +11,8 @@ buildscript {
 
 apply plugin: 'net.minecraftforge.gradle'
 
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
 group = 'net.zoizoi.forge'
 version = '1.0-SNAPSHOT'
 
@@ -115,7 +117,8 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    implementation files('libs/SlashBlade-mc1.12-r32-deobf.jar')
+//    implementation files('libs/SlashBlade-mc1.12-r32-deobf.jar')
+    implementation files('libs/SlashBlade-mc1.12-r33.jar')
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
