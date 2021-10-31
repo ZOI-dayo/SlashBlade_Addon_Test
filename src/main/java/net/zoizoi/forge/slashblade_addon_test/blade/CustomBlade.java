@@ -32,11 +32,9 @@ public class CustomBlade {
         customBlade.addEnchantment(Enchantments.POWER, 3);
         customBlade.addEnchantment(Enchantments.FORTUNE, 3);
         ItemSlashBladeNamed.IsDefaultBewitched.set(nbtTag, Boolean.TRUE);
-        ItemSlashBladeNamed.CurrentItemName.set(nbtTag, displayName);
+        ItemSlashBladeNamed.CurrentItemName.set(nbtTag, displayName); // item.{displayName}.name
         ItemSlashBladeNamed.CustomMaxDamage.set(nbtTag, 45);
         ItemSlashBlade.setBaseAttackModifier(nbtTag, 4F);
-        ItemSlashBladeNamed.TextureName.set(nbtTag, "named/bladetest/simpleblade/texture");
-        ItemSlashBladeNamed.ModelName.set(nbtTag, "named/bladetest/simpleblade/model");
         ItemSlashBlade.TextureName.set(nbtTag, "named/bladetest/simpleblade/texture");
         ItemSlashBlade.ModelName.set(nbtTag, "named/bladetest/simpleblade/model");
 //        ItemSlashBlade.TextureName.set(nbtTag, "named/darkraven/darkraven");
